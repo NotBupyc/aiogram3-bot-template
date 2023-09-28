@@ -1,4 +1,4 @@
-# Aiogram3 bot template
+# Aiogram3 Bot Template
 В шаблоне используется библеотека `aiogram3`, в качестве базы данных была использована `sqlalchemy`. 
 
 К сожелению sqlalchemy не поддерживает миграции, поэтому советую использовать для этого `alembic`.
