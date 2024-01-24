@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["NotBupyc"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+aiogram = "^3.2.0" # аиограм
+sqlalchemy = "^2.0.23" # для бд
+alembic = "^1.13.1" # для миграций алхимии
+environs = "^9.5.0" # для загрузки .env
+apscheduler = "^3.10.4" # таски
+structlog = "^23.2.0" # мега супер логер
+psutil = "^5.9.7" # для вывода информации о боте и сервере
+asyncpg = "^0.29.0" # асинхронное подключения к PostgreSQL
+psycopg2 = "^2.9.9" # миграции алембика
+jinja2 = "^3.1.2" # шаблонизатор текстов
+pyyaml = "^6.0.1"
+
+[tool.poetry.scripts]
+bot = "app.main:main" # старт бота
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
